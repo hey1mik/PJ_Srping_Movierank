@@ -2,6 +2,9 @@ package com.movierank.domain;
 
 import java.util.Date;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +16,10 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@Document(collection = "movie")
 public class MovieDTO {
+	
+	@Id
 	private int rank;
 	private String movie;
 	private String imgsrc;
