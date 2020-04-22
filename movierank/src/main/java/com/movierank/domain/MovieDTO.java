@@ -35,23 +35,6 @@ public class MovieDTO {
 	private double daumscore;
 	private double score;
 	
-	
-	public MovieDTO(int rank, String movie, String imgsrc, String type, String opendate, String bookingrate,
-			String runtime, String director, String actor, String navercode, double naverscore, String daumcode,
-			double daumscore) {
-		super();
-		this.rank = rank;
-		this.movie = movie;
-		this.imgsrc = imgsrc;
-		this.type = type;
-		this.opendate = opendate;
-		this.bookingrate = bookingrate;
-		this.runtime = runtime;
-		this.director = director;
-		this.actor = actor;
-		this.navercode = navercode;
-		this.naverscore = naverscore;
-		this.daumcode = daumcode;
-		this.daumscore = daumscore;
-	}
+
+
 }

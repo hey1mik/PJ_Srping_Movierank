@@ -17,7 +17,7 @@ public class MovieScheduler {
 	@Autowired
 	MovieService mService;
 	
-	@Scheduled(cron = "0 36 10 * * *")
+	@Scheduled(cron = "0 16 11 * * *")
 	public void movieCollect() throws IOException{
 		log.info(">>>>>MOVIE TICKET RANK");
 		mService.ticketRank();

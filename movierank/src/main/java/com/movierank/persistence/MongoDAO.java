@@ -28,7 +28,7 @@ public class MongoDAO {
 		//save는 insert와 다름. insert가 아니라 update를 한다는 차이가 있음.
 		// 똑같은 id값의 데이터를 넣을 때 안들어가는게 아니라 최신값으로 overwrite함.
 	}
-	
+	 
 	public void dropCol() {
 		log.info(">>>>>>>>>Collection Drop");
 		mongoOper.dropCollection("movie");
